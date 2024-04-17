@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clicker.css">
+    <title>Clicker Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <p id="resource-count">0</p>
+        <button id="click-button" onclick="handleClick()">Click Me!</button>
+        <div id="cursor-container">
+            <p id="cursor-count">0</p>
+            <p>hinta:</p>
+            <p id="cursor-cost">10</p> 
+            <button id="buy-cursor-button" onclick="buyCursor()">Buy cursor</button>
+            <br>
+            <p id="grandma-count">0</p>
+            <p>hinta:</p>
+            <p id="grandma-cost">100</p> 
+            <button id="buy-grandma-button" onclick="buyGrandma()">Buy grandmas</button>
+            <br>
+            <p id="farm-count">0</p>
+            <p>hinta:</p>
+            <p id="farm-cost">100</p> 
+            <button id="buy-farm-button" onclick="buyFarm()">Buy farms</button>
+            <br>
+            <button id="save-button" onclick="saveGame()">Save Game</button>
+            <br>
+            <button id="load-button" onclick="loadGame()">Load Game</button>
+            <br>
+            <button onclick="stopGame()">End the game</button>
+        </div>
+    </div>
+    <script src="clicker.js"></script>
+</body>
+</html>
